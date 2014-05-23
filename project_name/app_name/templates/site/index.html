@@ -1,0 +1,23 @@
+{% extends "site/site_page.html" %}
+
+{% load static %}
+
+{% block site_page_styles %}
+<link rel="stylesheet" media="screen" type="text/css"
+    href="{% get_static_prefix %}site/css/index.css" />
+{% endblock site_page_styles %}
+
+{% block site_page %}
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h1>Welcome</h1>
+            <a href="" class="btn btn-primary">OK</a>
+        </div>
+    </div>
+
+{% endblock site_page %}
+
+{% block site_page_scripts %}
+<script type="text/javascript" src="{% get_static_prefix %}site/js/index.js"></script>
+{% endblock site_page_scripts %}
