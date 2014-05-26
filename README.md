@@ -1,4 +1,2 @@
-simply-django-starter
+Test of django-geoip / pygeoip
 =====================
-
-Our starter project
