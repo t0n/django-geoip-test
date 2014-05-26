@@ -1,6 +1,8 @@
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+GEOIP_PATH = os.path.join(os.path.join(os.path.join(BASE_DIR, 'geoiptest'), 'locator'), 'data')
+
 SECRET_KEY = 'so-cl*fc+ua7(=pjv#ehkt+hn$b9z55))c6t^3^7&n&47kq_a$'
 
 DEBUG = True
@@ -15,9 +17,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'project_name',
-    'project_name.common',
-    'project_name.app_name',
+    'django.contrib.gis',
+
+    'geoiptest',
+    'geoiptest.common',
+    'geoiptest.locatortest',
 )
 
 TEMPLATE_LOADERS = (
@@ -34,9 +38,9 @@ MIDDLEWARE_CLASSES = (
     #'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'project_name.urls'
+ROOT_URLCONF = 'geoiptest.urls'
 
-#WSGI_APPLICATION = 'project_name.wsgi.application'
+#WSGI_APPLICATION = 'geoiptest.wsgi.application'
 
 DATABASES = {
     'default': {
