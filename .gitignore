@@ -56,3 +56,5 @@ docs/_build/
 .idea
 .kdev4
 *.kdev4
+
+.env
