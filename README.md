@@ -1,2 +1,2 @@
-Test of django-geoip / pygeoip
+Test of django-geoip
 =====================
